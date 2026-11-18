@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy HashVault to Azure
 
 on:
   push:
@@ -15,5 +15,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_KEY }}
           script: |
-            cd /var/www/html/cat2
-            git pull origin main
+            cd /var/www/html/ISProject1
+            git pull --ff-only origin main

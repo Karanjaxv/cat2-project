@@ -1,1 +1,7 @@
 config.php
+config/db.php
+*.sql
+*.key
+*.pem
+*.tgz
+.env
